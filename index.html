@@ -7,36 +7,33 @@
 
     <title>CV Cá Nhân - Phạm Quang Phi Long</title>
 
-    <!-- Liên kết CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font chữ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="cv-container">
+    <div class="khung-cv">
 
-        <!-- HEADER -->
-        <header class="card header-card">
+        <!-- ĐẦU TRANG -->
+        <header class="the the-dau-trang">
 
-            <img src="image.png" alt="Ảnh đại diện" class="avatar">
+            <img src="image.png" alt="Ảnh đại diện" class="anh-dai-dien">
 
-            <div class="header-info">
+            <div class="thong-tin-dau">
 
                 <h1>Phạm Quang Phi Long</h1>
 
-                <p class="role">
-                    Sinh viên Công nghệ thông tin - Frontend Web Developer
+                <p class="vai-tro">
+                    Sinh viên Công nghệ thông tin - Lập trình viên Web Frontend
                 </p>
 
-                <ul class="contact-list">
+                <ul class="ds-lien-he">
 
                     <li>
                         <i class="fa-solid fa-envelope"></i>
@@ -47,7 +44,7 @@
 
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <span>0888565277</span>
+                        <a href="tel:0888565277">0888565277</a>
                     </li>
 
                     <li>
@@ -57,8 +54,8 @@
 
                     <li>
                         <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/Long2427/do-an-ca-nhan">
-                            Github
+                        <a href="https://github.com/Long2427/do-an-ca-nhan" target="_blank" rel="noopener noreferrer">
+                            GitHub
                         </a>
                     </li>
 
@@ -68,9 +65,9 @@
         </header>
 
         <!-- GIỚI THIỆU -->
-        <section class="card">
+        <section class="the">
 
-            <h2 class="section-title">
+            <h2 class="tieu-de-muc">
                 <i class="fa-solid fa-user"></i>
                 Giới thiệu bản thân
             </h2>
@@ -88,64 +85,64 @@
         </section>
 
         <!-- HỌC VẤN -->
-        <section class="card">
+        <section class="the">
 
-            <h2 class="section-title">
+            <h2 class="tieu-de-muc">
                 <i class="fa-solid fa-graduation-cap"></i>
                 Học vấn
             </h2>
 
-            <div class="edu-item">
+            <div class="muc-hoc-van">
 
                 <div>
-                    <h3 class="edu-school">Trường Đại học Vinh</h3>
+                    <h3 class="truong-hoc">Trường Đại học Vinh</h3>
 
-                    <p class="edu-major">
+                    <p class="chuyen-nganh">
                         Chuyên ngành: Công nghệ thông tin
                     </p>
                 </div>
 
-                <span class="edu-year">2026 - Hiện tại</span>
+                <span class="nam-hoc">2025 - Hiện tại</span>
 
             </div>
 
         </section>
 
         <!-- KỸ NĂNG -->
-        <section class="card">
+        <section class="the">
 
-            <h2 class="section-title">
+            <h2 class="tieu-de-muc">
                 <i class="fa-solid fa-code"></i>
                 Kỹ năng
             </h2>
 
-            <div class="skills-container">
+            <div class="nhom-ky-nang">
 
-                <span class="skill-tag">
+                <span class="the-ky-nang">
                     <i class="fa-brands fa-html5"></i> HTML5
                 </span>
 
-                <span class="skill-tag">
+                <span class="the-ky-nang">
                     <i class="fa-brands fa-css3-alt"></i> CSS3
                 </span>
 
-                <span class="skill-tag">
+                <span class="the-ky-nang">
                     <i class="fa-brands fa-js"></i> JavaScript
                 </span>
 
-                <span class="skill-tag">
+                <span class="the-ky-nang">
                     <i class="fa-solid fa-terminal"></i> C++
                 </span>
 
-                <span class="skill-tag">
+                <span class="the-ky-nang">
                     <i class="fa-solid fa-database"></i> SQL
                 </span>
 
-                <span class="skill-tag">
+                <span class="the-ky-nang">
                     <i class="fa-brands fa-figma"></i> Figma
                 </span>
 
-                <span class="skill-tag">
+                <span class="the-ky-nang">
                     <i class="fa-brands fa-github"></i> Git / GitHub
                 </span>
 
@@ -154,17 +151,17 @@
         </section>
 
         <!-- DỰ ÁN -->
-        <section class="card">
+        <section class="the">
 
-            <h2 class="section-title">
+            <h2 class="tieu-de-muc">
                 <i class="fa-solid fa-folder-open"></i>
                 Dự án tiêu biểu
             </h2>
 
-            <div class="projects-grid">
+            <div class="luoi-du-an">
 
                 <!-- DỰ ÁN 1 -->
-                <article class="project-box">
+                <article class="o-du-an">
 
                     <div>
                         <h3>Website Nhà hàng Mâm Xưa</h3>
@@ -177,13 +174,14 @@
                     </div>
 
                     <div>
-                        <p class="project-tech">
+                        <p class="cong-nghe-du-an">
                             Công nghệ: HTML5, CSS3, JavaScript
                         </p>
 
                         <a href="https://github.com/Long2427/do-an-ca-nhan"
                             target="_blank"
-                            class="project-link">
+                            rel="noopener noreferrer"
+                            class="link-du-an">
 
                             <i class="fa-brands fa-github"></i>
                             Xem mã nguồn
@@ -194,7 +192,7 @@
                 </article>
 
                 <!-- DỰ ÁN 2 -->
-                <article class="project-box">
+                <article class="o-du-an">
 
                     <div>
                         <h3>Website CV Cá nhân</h3>
@@ -206,13 +204,14 @@
                     </div>
 
                     <div>
-                        <p class="project-tech">
+                        <p class="cong-nghe-du-an">
                             Công nghệ: HTML5, CSS3, Flexbox
                         </p>
 
                         <a href="https://github.com/Long2427/do-an-ca-nhan"
                             target="_blank"
-                            class="project-link">
+                            rel="noopener noreferrer"
+                            class="link-du-an">
 
                             <i class="fa-brands fa-github"></i>
                             Xem mã nguồn
@@ -227,7 +226,7 @@
         </section>
 
         <!-- CHÂN TRANG -->
-        <footer class="footer">
+        <footer class="chan-trang">
 
             <p>
                 © 2026 Phạm Quang Phi Long.

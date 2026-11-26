@@ -1,14 +1,14 @@
-
 /* =================================
-   1. THIẾT LẬP CHUNG
+1. THIẾT LẬP CHUNG
 ================================= */
 
 :root {
-    --maunen: #f3f4f6;
-    --mauchu: #1f2937;
-    --mauxanh: #2563eb;
-    --mautrang: #ffffff;
-    --mauvien: #e5e7eb;
+    --nen: #f3f4f6;
+    --chu: #1f2937;
+    --xanh: #2563eb;
+    --xanh-dam: #1d4ed8;
+    --trang: #ffffff;
+    --vien: #e5e7eb;
 }
 
 * {
@@ -19,26 +19,30 @@
 }
 
 body {
-    background-color: var(--maunen);
-    color: var(--mauchu);
+    background-color: var(--nen);
+    color: var(--chu);
     line-height: 1.6;
     padding: 30px 15px;
 }
 
+a:focus-visible {
+    outline: 2px solid var(--xanh);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 /* =================================
-   2. KHUNG CV
+2. KHUNG CV
 ================================= */
 
-.cv-container {
+.khung-cv {
     width: 100%;
     max-width: 850px;
     margin: 0 auto;
 }
 
-/* Các khung nội dung */
-
-.card {
-    background-color: var(--mautrang);
+.the {
+    background-color: var(--trang);
     border-radius: 12px;
     padding: 28px;
     margin-bottom: 20px;
@@ -46,37 +50,37 @@ body {
 }
 
 /* =================================
-   3. TIÊU ĐỀ CÁC MỤC
+3. TIÊU ĐỀ MỤC
 ================================= */
 
-.section-title {
+.tieu-de-muc {
     font-size: 20px;
     font-weight: 700;
     color: #111827;
     margin-bottom: 16px;
     padding-bottom: 10px;
-    border-bottom: 2px solid var(--mauvien);
+    border-bottom: 2px solid var(--vien);
 
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.section-title i {
-    color: var(--mauxanh);
+.tieu-de-muc i {
+    color: var(--xanh);
 }
 
 /* =================================
-   4. PHẦN HEADER
+4. ĐẦU TRANG
 ================================= */
 
-.header-card {
+.the-dau-trang {
     display: flex;
     align-items: center;
     gap: 28px;
 }
 
-.avatar {
+.anh-dai-dien {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -85,25 +89,25 @@ body {
     flex-shrink: 0;
 }
 
-.header-info h1 {
+.thong-tin-dau h1 {
     font-size: 28px;
     font-weight: 700;
     color: #111827;
     margin-bottom: 4px;
 }
 
-.role {
+.vai-tro {
     font-size: 16px;
     font-weight: 600;
-    color: var(--mauxanh);
+    color: var(--xanh);
     margin-bottom: 14px;
 }
 
 /* =================================
-   5. THÔNG TIN LIÊN HỆ
+5. LIÊN HỆ
 ================================= */
 
-.contact-list {
+.ds-lien-he {
     display: flex;
     flex-wrap: wrap;
     gap: 12px 24px;
@@ -112,34 +116,34 @@ body {
     color: #4b5563;
 }
 
-.contact-list li {
+.ds-lien-he li {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.contact-list i {
-    color: var(--mauxanh);
+.ds-lien-he i {
+    color: var(--xanh);
     width: 16px;
     text-align: center;
 }
 
-.contact-list a {
+.ds-lien-he a {
     color: #4b5563;
     text-decoration: none;
     overflow-wrap: anywhere;
 }
 
-.contact-list a:hover {
-    color: var(--mauxanh);
+.ds-lien-he a:hover {
+    color: var(--xanh);
     text-decoration: underline;
 }
 
 /* =================================
-   6. PHẦN HỌC VẤN
+6. HỌC VẤN
 ================================= */
 
-.edu-item {
+.muc-hoc-van {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -147,21 +151,21 @@ body {
     gap: 8px;
 }
 
-.edu-school {
+.truong-hoc {
     font-size: 17px;
     font-weight: 700;
     color: #111827;
 }
 
-.edu-major {
+.chuyen-nganh {
     font-size: 15px;
     color: #374151;
     margin-top: 4px;
 }
 
-.edu-year {
+.nam-hoc {
     background-color: #eff6ff;
-    color: var(--mauxanh);
+    color: var(--xanh);
     font-size: 13px;
     font-weight: 600;
     padding: 4px 12px;
@@ -169,16 +173,16 @@ body {
 }
 
 /* =================================
-   7. PHẦN KỸ NĂNG
+7. KỸ NĂNG
 ================================= */
 
-.skills-container {
+.nhom-ky-nang {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.skill-tag {
+.the-ky-nang {
     background-color: #f3f4f6;
     color: #1f2937;
     border: 1px solid #d1d5db;
@@ -194,26 +198,26 @@ body {
     transition: 0.3s;
 }
 
-.skill-tag:hover {
+.the-ky-nang:hover {
     background-color: #eff6ff;
     border-color: #93c5fd;
-    color: #1d4ed8;
+    color: var(--xanh-dam);
     transform: translateY(-3px);
 }
 
 /* =================================
-   8. PHẦN DỰ ÁN
+8. DỰ ÁN
 ================================= */
 
-.projects-grid {
+.luoi-du-an {
     display: flex;
     gap: 20px;
 }
 
-.project-box {
+.o-du-an {
     flex: 1;
     min-width: 0;
-    border: 1px solid var(--mauvien);
+    border: 1px solid var(--vien);
     border-radius: 10px;
     padding: 20px;
     background-color: #f9fafb;
@@ -223,36 +227,36 @@ body {
     justify-content: space-between;
 }
 
-.project-box h3 {
+.o-du-an h3 {
     font-size: 17px;
     font-weight: 700;
     color: #111827;
     margin-bottom: 8px;
 }
 
-.project-box p {
+.o-du-an p {
     font-size: 14px;
     color: #4b5563;
     margin-bottom: 14px;
 }
 
-.project-tech {
+.cong-nghe-du-an {
     font-size: 13px;
     font-weight: 600;
-    color: var(--mauxanh);
+    color: var(--xanh);
     margin-bottom: 14px;
 }
 
-.project-link {
+.link-du-an {
     display: inline-flex;
     align-items: center;
     gap: 6px;
 
     font-size: 14px;
     font-weight: 600;
-    color: white;
+    color: var(--trang);
 
-    background-color: var(--mauxanh);
+    background-color: var(--xanh);
     padding: 8px 14px;
     border-radius: 6px;
     text-decoration: none;
@@ -261,16 +265,16 @@ body {
     transition: 0.3s;
 }
 
-.project-link:hover {
-    background-color: #1d4ed8;
+.link-du-an:hover {
+    background-color: var(--xanh-dam);
     transform: translateY(-2px);
 }
 
 /* =================================
-   9. CHÂN TRANG
+9. CHÂN TRANG
 ================================= */
 
-.footer {
+.chan-trang {
     text-align: center;
     font-size: 13px;
     color: #6b7280;
@@ -278,38 +282,41 @@ body {
 }
 
 /* =================================
-   10. RESPONSIVE ĐIỆN THOẠI
+10. GIAO DIỆN ĐIỆN THOẠI
 ================================= */
 
 @media (max-width: 650px) {
-
     body {
         padding: 10px;
     }
 
-    .card {
+    .the {
         padding: 18px;
     }
 
-    .header-card {
+    .the-dau-trang {
         flex-direction: column;
         text-align: center;
     }
 
-    .header-info h1 {
+    .thong-tin-dau h1 {
         font-size: 23px;
     }
 
-    .contact-list {
+    .ds-lien-he {
         justify-content: center;
     }
 
-    .projects-grid {
+    .luoi-du-an {
         flex-direction: column;
     }
 
-    .edu-item {
+    .muc-hoc-van {
         flex-direction: column;
     }
 
+    .link-du-an {
+        width: 100%;
+        justify-content: center;
+    }
 }
